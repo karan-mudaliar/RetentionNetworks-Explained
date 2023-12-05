@@ -273,7 +273,33 @@
 
 <h2>Peer-Review</h2>
 
-<div>
+<p><strong>Summary:</strong> The Retentive Network (RETNET), introduced in this study, is a proposed foundational architecture for large language models. It claims to achieve training parallelism, low-cost inference, and robust performance. The paper explores the interplay between recurrence and attention, leading to the development of a retention mechanism for sequence modeling. Notably, the parallel representation fosters training parallelism, while the recurrent representation facilitates low-cost O(1) inference, enhancing decoding throughput, latency, and GPU memory efficiency without compromising on performance.</p>
+
+    <p><strong>Strengths:</strong></p>
+    <ul>
+        <li>The paper is well written and easy to understand.</li>
+        <li>It introduces a novel concept with the potential to significantly enhance future large language models (LLMs).</li>
+        <li>The research includes experiments comparing RetNet's performance with traditional transformers.</li>
+    </ul>
+
+    <p><strong>Weaknesses:</strong></p>
+    <ul>
+        <li>The model has been tested and compared only for a single size, leaving some uncertainty about its scalability.</li>
+        <li>The evaluation of model performance relies solely on perplexity, which may not fully capture the model's capabilities.</li>
+        <li>Since it was published by Microsoft, they could've released a working implementation to test it out, similar to Chat GPT.</li>
+    </ul>
+
+    <p><strong>Limitations:</strong></p>
+    <ul>
+        <li>The paper does not explore the scalability of RETNET for significantly larger models. A broader range of model sizes, extending beyond the 13B range, would provide a more comprehensive understanding of its performance scalability.</li>
+    </ul>
+
+    <p><strong>Overall Rating:</strong> 6 (Weak Accept)</p>
+
+    <p>This rating reflects the paper's innovative approach and potential impact on the field of LLMs, balanced against the need for further exploration of its scalability and performance across a wider range of model sizes. But many of these claims need thorough testing, and until then, the field will continue to be dominated by transformers.</p>
+
+
+<!-- <div>
     <h3>Review by Karan Mudaliar</h3>
     <p><strong>Score:</strong> NA</p>
     <p><strong>Strengths:</strong></p>
@@ -298,7 +324,7 @@
     <ul>
         <li>bullet points</li>
     </ul>
-</div>
+</div> -->
 
 
 <p>Optionally, in addition to a reading-based analysis, implement the ideas of the paper in code, and report on your findings.
