@@ -167,6 +167,23 @@
         <li><strong>Addressing the 'Impossible Triangle':</strong> The paper identifies the challenge of achieving training parallelism, good performance, and low inference cost simultaneously in Transformer models, referring to this challenge as the "impossible triangle."</li>
         <li><strong>Comparison with Existing Models:</strong> RetNet is compared extensively with the Transformer and its variants, focusing on aspects like scaling curves, in-context learning, and inference cost.</li>
     </ul>
+    <br>
+
+
+    <div style="display: flex; justify-content: space-around; align-items: center;">
+      <!-- Image for Impossible Triangle -->
+      <div style="text-align: center;">
+          <img src="images/met1.png" alt="Impossible Triangle" style="max-width: 60%; height: auto;">
+          <p>Figure 1: Impossible Triangle</p>
+      </div>
+  
+      <!-- Image for Comparison of Existing Models -->
+      <div style="text-align: center;">
+          <img src="images/met2.png" alt="Comparison of Existing Models" style="max-width: 200%; height: auto;">
+          <p>Figure 2: Comparison of Existing Models</p>
+      </div>
+  </div>
+  <br>
 
     <h3>Architecture:</h3>
 
@@ -175,8 +192,20 @@
         <ul>
             <li><strong>Parallel Representation:</strong> Facilitates training parallelism, fully utilizing GPU devices for efficient training.</li>
             <li><strong>Recurrent Representation:</strong> Enables efficient O(1) inference in terms of memory and computation, significantly reducing deployment cost and latency. This representation also simplifies implementation by eliminating the need for key-value cache tricks.</li>
-            <li><strong>Chunkwise Recurrent Representation:</strong> Allows for efficient long-sequence modeling. Each local block is encoded in parallel for computation speed, while global blocks are encoded recurrently to save GPU memory.</li>
         </ul>
+        <br>
+        <br>
+        <div style="text-align: center;">
+          <img src="images/arc2.png" alt="Retention Equation" style="max-width: 100%; height: auto;">
+          <p>Figure 3: Retention Equation</p>
+      </div>
+      <br>
+      <br>
+      <div style="text-align: center;">
+          <img src="images/arc1.png" alt="Parallel and Sequential Representation of Retention" style="max-width: 100%; height: auto;">
+          <p>Figure 4: Parallel and Sequential Representation of Retention</p>
+      </div>
+      <br>
     </ul>
 
     <h3>Performance and Efficiency:</h3>
