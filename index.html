@@ -214,7 +214,31 @@
         <li><strong>Inference Efficiency:</strong> RetNet demonstrates length-invariant inference cost. For instance, with a 7B model and 8k sequence length, RetNet decodes 8.4 times faster and saves 70% of memory compared to Transformers.</li>
         <li><strong>Training Efficiency:</strong> During training, RetNet achieves 25-50% memory saving and 7 times acceleration compared to the standard Transformer. It also shows advantages over highly-optimized variants like FlashAttention.</li>
     </ul>
-
+    <div>
+      <h2>Performance and Efficiency</h2>
+      <!-- Content of the Performance and Efficiency section goes here -->
+  
+      <!-- Images for Inference Cost and Model Size -->
+      <div style="display: flex; justify-content: space-around; align-items: center;">
+          <!-- Image for Inference Cost -->
+          <div style="text-align: center;">
+              <img src="images/per1.png" alt="Inference Cost" style="max-width: 80%; height: auto;">
+              <p>Figure 5: Inference Cost</p>
+          </div>
+  
+          <!-- Image for Model Size -->
+          <div style="text-align: center;">
+              <img src="images/per2.png" alt="Model Size" style="max-width: 140%; height: auto;">
+              <p>Figure 6: Model Size</p>
+          </div>
+      </div>
+  
+      <!-- Image for Performance Comparison -->
+      <div style="text-align: center; margin-top: 20px;">
+          <img src="images/per3.png" alt="Performance Comparison" style="max-width: 100%; height: auto;">
+          <p>Figure 7: Performance Comparison between Different Transformers and RetNet</p>
+      </div>
+  </div>
     <p>Hence, RetNet's architecture is designed to overcome the limitations of the Transformer model by introducing a novel retention mechanism that supports multiple computation paradigms, leading to improvements in training efficiency, inference cost, and scalability.</p>
 
 
