@@ -1,25 +1,56 @@
+/* body, td, th {
+  font-family: 'Open Sans', sans-serif;
+} */
+
 body, td, th {
   font-family: 'Open Sans', sans-serif;
+  color: #333; /* Dark grey text */
+  background-color: #fff; /* White background */
 }
+
+
+/* h2 {
+  margin-top: 3ex;
+} */
+
 h2 {
   margin-top: 3ex;
+  color: #000; /* Black text for headings */
 }
+
+
 /* Deep blues */
-.color-primary-0 { color: #233BF5 }
+/* .color-primary-0 { color: #233BF5 }
 .color-primary-1 { color: #3314DE }
 .color-primary-2 { color: #7717FA }
 .color-primary-3 { color: #1461DE }
-.color-primary-4 { color: #17A9FA }
+.color-primary-4 { color: #17A9FA } */
+
+.color-primary-0 { color: #333 } /* Dark grey */
+.color-primary-1 { color: #666 } /* Medium grey */
+.color-primary-2 { color: #999 } /* Light grey */
+.color-primary-3 { color: #ccc } /* Lighter grey */
+.color-primary-4 { color: #eee } /* Lightest grey */
+
+/* .nd-pageheader {
+  padding: 2rem 15px;
+  margin-bottom: 1.5rem;
+  color: white;
+  text-align: center;
+  background-color: #233BF5;
+} */
 
 .nd-pageheader {
   padding: 2rem 15px;
   margin-bottom: 1.5rem;
   color: white;
   text-align: center;
-  background-color: #233BF5;
+  background-color: #000; /* Black background */
 }
 
-.nd-pageheader a, .nd-pageheader a.likelink {
+
+
+/* .nd-pageheader a, .nd-pageheader a.likelink {
   color: #e4f1fe;
 }
 
@@ -29,6 +60,18 @@ h2 {
   padding: 1rem;
   text-align: center;
   background-color: #233BF5;
+} */
+
+.nd-pageheader a, .nd-pageheader a.likelink {
+  color: #ccc; /* Light grey links */
+}
+
+.nd-pagefooter {
+  color: white;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #000; /* Black background */
 }
 
 .nd-pagefooter a {
