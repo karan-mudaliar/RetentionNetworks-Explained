@@ -1,20 +1,7 @@
-# Class Project Website Template
+# Retention Networks Explained: A basic study of retention networks
 
-Copy this template on github, and rename the repo to the name of your project.
-
-Then go to the repo "Settings" and change "Webhook" settings, to "Add a webhook."
-
-Set up the webhook exactly as you see in the image below, so that it sends
-JSON push notifications to `https://expo.baulab.info/push`.  To work, it will
-need to have the secret pictured.
+The paper introduces the Retentive Network (RetNet), which is designed to address (claims) some of the limitations of the Transformer architecture, particularly in the context of large language models. The key advantages of RetNet over traditional Transformers are centered around its ability to achieve training parallelism, good performance, and low inference cost simultaneously, which the authors refer to as the "impossible triangle."
 
 <img src="webhook.png" style="max-width:100%">
 
-Then whenever you push your website, it will show up on
-https://expo.baulab.info/2023-Fall/[username].  Customize your
-`index.html`.
-
-Your final project report will be a static HTML website that
-shares your insights.  As you develop your
-methods, results, and narrative, add content as needed here.
 
