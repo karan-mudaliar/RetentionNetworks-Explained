@@ -1,9 +1,10 @@
 <!doctype html>
+<meta charset="UTF-8">
 <html lang="en">
 <head>
-<title>Your Project Name</title>
-<meta property="og:title" content=Your Project Name" />
-<meta name="twitter:title" content="Your Project Name" />
+<title>Retention Networks Explained</title>
+<meta property="og:title" content="Retention Networks Explained" />
+<meta name="twitter:title" content="Retention Networks Explained" />
 <meta name="description" content="Your project about your cool topic described right here." />
 <meta property="og:description" content="Your project about your cool topic described right here." />
 <meta name="twitter:description" content="Your project about your cool topic described right here." />
@@ -22,7 +23,7 @@
 <div class="nd-pageheader">
  <div class="container">
  <h1 class="lead">
- <nobr class="widenobr">Your Project Name</nobr>
+ <nobr class="widenobr">Retention Networks Explained</nobr>
  <nobr class="widenobr">For CS 7150</nobr>
  </h1>
  </div>
@@ -31,32 +32,349 @@
 <div class="container">
 <div class="row">
 <div class="col justify-content-center text-center">
-<h2>An Analysis of [papername]</h2>
-<p>Describe the paper and the big question about it that interests you.</p>
+<h2>An Analysis of Retentive Network: A Successor to Transformer for Large Language Models</h2>
+<p>The paper introduces the Retentive Network (RetNet), which is designed to address (claims) some of the limitations of the Transformer 
+  architecture, particularly in the context of large language models. The key advantages of RetNet over 
+  traditional Transformers are centered around its ability to achieve training parallelism, good performance, 
+  and low inference cost simultaneously, which the authors refer to as the "impossible triangle."<br> 
+  <br>
+  The reason this paper interests me is because if the claims of the paper are true, this will be next big thing in language modelling
+</p>
 </div>
 </div>
 <div class="row">
 <div class="col">
 
-<h2>Literature Review; Biography; Social Impact; Industry Applications; Follow-on Research; and Peer-Review</h2>
+<h2>Literature Review</h2>
 
-<p>Just as we have done in the role-playing exercise, analyze the paper from all perspectives.
-</p>
+<p><strong>"Attention Is All You Need" (Vaswani et al., 2017)</strong></p>
+<ul>
+    <li>Introduced the Transformer model, focusing solely on attention mechanisms, eliminating the need for recurrence and convolutions.</li>
+    <li>Achieved state-of-the-art results in machine translation, proving more parallelizable and efficient in training.</li>
+</ul>
 
-<p>Optionally, in addition to a reading-based analysis, implement the ideas of the paper in code, and report on your findings.
-</p>
+<p><strong>"Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention" (Katharopoulos et al., 2020)</strong></p>
+<ul>
+    <li>Proposed linear transformers to reduce complexity from O(N^2) to O(N), making them significantly faster for long sequences.</li>
+    <li>Maintained performance comparable to standard transformers while being up to 4000x faster in autoregressive prediction.</li>
+</ul>
+
+<p><strong>"FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness" (Dao et al., 2022)</strong></p>
+<ul>
+    <li>Introduced FlashAttention, an IO-aware attention algorithm optimizing memory usage between GPU memory levels.</li>
+    <li>Enabled faster Transformer training and improved performance on various tasks, including long-sequence challenges.</li>
+</ul>
+
+<p><strong>"Retentive Network: A Successor to Transformer for Large Language Models" (Sun et al., 2023) </strong></p>
+<ul>
+    <li>Proposed RETNET, a new architecture for large language models, achieving efficient training, low-cost inference, and strong performance.</li>
+    <li>Introduced a retention mechanism supporting various computation paradigms, positioning it as a successor to the Transformer.</li>
+</ul>
+
+<!-- <h2>Biography</h2> -->
+<h2>Biography</h2>
+
+<table>
+  <!-- Row for Names -->
+  <tr>
+    <td><p>Yutao Sun</p></td>
+    <td><p>Li Dong</p></td>
+    <td><p>Shaohan Huang</p></td>
+    <td><p>Shuming Ma</p></td>
+  </tr>
+
+  <!-- Row for Images and Qualifications -->
+  <tr>
+    <!-- Person 1 -->
+    <td>
+      <img src="images/image1.jpg" alt="Yutao Sun" style="width:100px;height:100px;">
+      <p>Research intern in Microsoft Research Lab - Asia<br>
+      PhD student in Tsinghua University, Beijing<br>
+      Research interest in LLM backbone & applications, and long sequence modeling and inference</p>
+    </td>
+    <!-- Person 2 -->
+    <td>
+      <img src="images/image2.jpg" alt="Li Dong" style="width:100px;height:100px;">
+      <p>Principal Researcher, Microsoft Research Lab - Asia<br>
+      PhD in Informatics from The University of Edinburgh, Scotland<br>
+      Research interest in Human Language Technologies and Natural Language Computing</p>
+    </td>
+    <!-- Person 3 -->
+    <td>
+      <img src="images/image3.jpg" alt="Shaohan Huang" style="width:100px;height:100px;">
+      <p>Senior Researcher at the Natural Language Computing group at Microsoft Research Lab - Asia<br>
+      MS in Computer Science at Beihang University, Beijing<br>
+      Recently worked on a paper called: Language is not all you need</p>
+    </td>
+    <!-- Person 4 -->
+    <td>
+      <img src="images/image4.jpg" alt="Shuming Ma" style="width:100px;height:100px;">
+      <p>Researcher at the Natural Language Computing group at Microsoft Research Lab - Asia<br>
+      Master’s and Bachelor’s degrees from Peking University, with a focus on natural language processing<br>
+      Published 30+ papers on large-scale pre-trained LMs at top conferences (ICML, ICLR, ACL, EMNLP)</p>
+    </td>
+  </tr>
+
+  <!-- Row for Names (Second Row of People) -->
+  <tr>
+    <td><p>Yuqing Xia</p></td>
+    <td><p>Jilong Xue</p></td>
+    <td><p>Furu Wei</p></td>
+    <td><p>Jianyong Wang</p></td>
+  </tr>
+
+  <!-- Row for Images and Qualifications (Second Row of People) -->
+  <tr>
+    <!-- Person 5 -->
+    <td>
+      <img src="images/image5.png" alt="Yuqing Xia" style="width:100px;height:100px;">
+      <p>Researcher at the Natural Language Computing group at Microsoft Research Lab - Asia<br>
+      Ph.D. in Biology from Peking University in 2019<br>
+      Interested in using AI to empower natural science research</p>
+    </td>
+    <!-- Person 6 -->
+    <td>
+      <img src="images/image6.jpg" alt="Jilong Xue" style="width:100px;height:100px;">
+      <p>Principal Researcher in System Research Group of Microsoft Research Asia (MSRA)<br>
+      Jilong received his Ph.D. in Computer Science from Peking University<br>
+      Builds AI frameworks and compilers to bridge and optimize hardware for AI applications</p>
+    </td>
+    <!-- Person 7 -->
+    <td>
+      <img src="images/image7.jpg" alt="Furu Wei" style="width:100px;height:100px;">
+      <p>Partner Research Manager at Microsoft Research Asia<br>
+      Previously a Staff Researcher at IBM Research - China<br>
+      Ph.D. in computer science from Wuhan University in 2009<br>
+      Worked with Li Dong on several Microsoft research papers</p>
+    </td>
+    <!-- Person 8 -->
+    <td>
+      <img src="images/image8.png" alt="Jianyong Wang" style="width:100px;height:100px;">
+      <p>Professor in the Department of Computer Science and Technology at Tsinghua University<br>
+      Supported by various organizations<br>
+      Research focuses on various data mining algorithms</p>
+    </td>
+  </tr>
+</table>
+
+<h2>Methodology and Architecture</h2>
+<p>RetNet is a novel architecture designed to address some of the limitations of the Transformer model, particularly in the context of large language models. Here's an overview of its methodology and architecture:</p>
+
+    <h3>Methodology:</h3>
+
+    <ul>
+        <li><strong>Objective:</strong> The primary goal of RetNet is to achieve training parallelism, efficient long-sequence modeling, Transformer-comparable performance, and low-cost inference simultaneously.</li>
+        <li><strong>Addressing the 'Impossible Triangle':</strong> The paper identifies the challenge of achieving training parallelism, good performance, and low inference cost simultaneously in Transformer models, referring to this challenge as the "impossible triangle."</li>
+        <li><strong>Comparison with Existing Models:</strong> RetNet is compared extensively with the Transformer and its variants, focusing on aspects like scaling curves, in-context learning, and inference cost.</li>
+    </ul>
+    <br>
+
+
+    <div style="display: flex; justify-content: space-around; align-items: center;">
+      <!-- Image for Impossible Triangle -->
+      <div style="text-align: center;">
+          <img src="images/met1.png" alt="Impossible Triangle" style="max-width: 60%; height: auto;">
+          <p>Figure 1: Impossible Triangle</p>
+      </div>
+  
+      <!-- Image for Comparison of Existing Models -->
+      <div style="text-align: center;">
+          <img src="images/met2.png" alt="Comparison of Existing Models" style="max-width: 200%; height: auto;">
+          <p>Figure 2: Comparison of Existing Models</p>
+      </div>
+  </div>
+  <br>
+
+    <h3>Architecture:</h3>
+
+    <ul>
+        <li><strong>Multi-Scale Retention Mechanism:</strong> RetNet introduces a multi-scale retention mechanism as a substitute for the multi-head attention mechanism used in Transformers. This mechanism supports three computation paradigms:</li>
+        <ul>
+            <li><strong>Parallel Representation:</strong> Facilitates training parallelism, fully utilizing GPU devices for efficient training.</li>
+            <li><strong>Recurrent Representation:</strong> Enables efficient O(1) inference in terms of memory and computation, significantly reducing deployment cost and latency. This representation also simplifies implementation by eliminating the need for key-value cache tricks.</li>
+        </ul>
+        <br>
+        <br>
+        <div style="text-align: center;">
+          <img src="images/arc2.png" alt="Retention Equation" style="max-width: 100%; height: auto;">
+          <p>Figure 3.1: Retention Equation</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/ret.png" alt="Retention Equation in Sequential Form" style="max-width: 50%; height: auto;">
+        <p>Figure 3.2: Retention Equation in Sequential Form</p>
+      </div>
+      <br>
+      <br>
+      <div style="text-align: center;">
+          <img src="images/arc1.png" alt="Parallel and Sequential Representation of Retention" style="max-width: 100%; height: auto;">
+          <p>Figure 4: Parallel and Sequential Representation of Retention</p>
+      </div>
+      <br>
+    </ul>
+
+    <h3>Performance and Efficiency:</h3>
+
+    <ul>
+        <li><strong>Inference Efficiency:</strong> RetNet demonstrates length-invariant inference cost. For instance, with a 7B model and 8k sequence length, RetNet decodes 8.4 times faster and saves 70% of memory compared to Transformers.</li>
+        <li><strong>Training Efficiency:</strong> During training, RetNet achieves 25-50% memory saving and 7 times acceleration compared to the standard Transformer. It also shows advantages over highly-optimized variants like FlashAttention.</li>
+    </ul>
+    <div>
+      <h2>Performance and Efficiency</h2>
+      <!-- Content of the Performance and Efficiency section goes here -->
+  
+      <!-- Images for Inference Cost and Model Size -->
+      <div style="display: flex; justify-content: space-around; align-items: center;">
+          <!-- Image for Inference Cost -->
+          <div style="text-align: center;">
+              <img src="images/per1.png" alt="Inference Cost" style="max-width: 80%; height: auto;">
+              <p>Figure 5: Inference Cost</p>
+          </div>
+  
+          <!-- Image for Model Size -->
+          <div style="text-align: center;">
+              <img src="images/per2.png" alt="Model Size" style="max-width: 140%; height: auto;">
+              <p>Figure 6: Model Size</p>
+          </div>
+      </div>
+  
+      <!-- Image for Performance Comparison -->
+      <div style="text-align: center; margin-top: 20px;">
+          <img src="images/per3.png" alt="Performance Comparison" style="max-width: 200%; height: auto;">
+          <p>Figure 7: Performance Comparison between Different Transformers and RetNet</p>
+      </div>
+  </div>
+    <p>Hence, RetNet's architecture is designed to overcome the limitations of the Transformer model by introducing a novel retention mechanism that supports multiple computation paradigms, leading to improvements in training efficiency, inference cost, and scalability.</p>
+
+
+<h2>Social Impact</h2>
+
+<p>Since RetNets function in a manner similar to transformers, their societal impact overlaps:</p>
+
+    <ul>
+        <li><strong>Environmental Concerns:</strong> Everytime a series of 25 prompts are asked to ChatGPT, it consumes approximately the equivalent of 500ml (16oz) of water. But by using RetNets, we can reduce the inference costs significantly, hence reducing its environmental impact.</li>
+        <li><strong>Bias:</strong> It can inadvertently perpetuate biases present in its training data. Addressing these biases is crucial for ensuring fairness and ethical use of AI.</li>
+        <li><strong>Inclusivity:</strong> These technologies can significantly enhance accessibility for people with disabilities, offering tools for communication, navigation, and interaction that were previously unavailable.</li>
+        <li><strong>Privacy Concerns:</strong> Most Language models are trained on a larger scale data scraped from the internet, which might also include user data. There is always a risk of privacy violations as adversarial prompts can lead to data leaks.</li>
+        <li><strong>Impact on Employment:</strong> Automation and AI are already leading to displacement in certain sectors, but it's also creating new opportunities in tech and other industries. The social impact of this is still underway.</li>
+    </ul>
+
+<h2>Industry Applications</h2>
+<ul>
+  <li><strong>Jobs in General:</strong> Using a language model as a knowledge base increases the productivity of workers manifold.</li>
+  <li><strong>Finance:</strong> In the finance sector, these technologies can enhance fraud detection and improve customer service through intelligent chatbots.</li>
+  <li><strong>Retail and E-commerce:</strong> AI can personalize shopping experiences, summarize reviews, and recommend products to users.</li>
+</ul>
+
+<p>The above are the examples that I can think of, but I believe it will be beneficial to almost every industry in some way or the other.</p>
+
+<h2>Follow-on Research</h2>
+
+<ul>
+  <li><strong>Model Efficiency and Validity:</strong> Follow-on research has to be carried out on the scalability, efficiency, and validity of this architecture. Only one RetNet model is shown in the paper as a 7B parameter model.</li>
+  <li><strong>Cross-disciplinary Applications:</strong> Exploring the application of these AI models in various fields such as climate science, astrophysics, and materials science is a burgeoning area of research.</li>
+  <li><strong>More applications of retention can be studied and how it can affect the field currently dominated by transformers can be explored.</strong></li>
+</ul>
+
+<h2>Peer-Review</h2>
+
+<p><strong>Summary:</strong> The Retentive Network (RETNET), introduced in this study, is a proposed foundational architecture for large language models. It claims to achieve training parallelism, low-cost inference, and robust performance. The paper explores the interplay between recurrence and attention, leading to the development of a retention mechanism for sequence modeling. Notably, the parallel representation fosters training parallelism, while the recurrent representation facilitates low-cost O(1) inference, enhancing decoding throughput, latency, and GPU memory efficiency without compromising on performance.</p>
+
+    <p><strong>Strengths:</strong></p>
+    <ul>
+        <li>The paper is well written and easy to understand.</li>
+        <li>It introduces a novel concept with the potential to significantly enhance future large language models (LLMs).</li>
+        <li>The research includes experiments comparing RetNet's performance with traditional transformers.</li>
+    </ul>
+
+    <p><strong>Weaknesses:</strong></p>
+    <ul>
+        <li>The model has been tested and compared only for a single size, leaving some uncertainty about its scalability.</li>
+        <li>The evaluation of model performance relies solely on perplexity, which may not fully capture the model's capabilities.</li>
+        <li>Since it was published by Microsoft, they could've released a working implementation to test it out, similar to Chat GPT.</li>
+    </ul>
+
+    <p><strong>Limitations:</strong></p>
+    <ul>
+        <li>The paper does not explore the scalability of RETNET for significantly larger models. A broader range of model sizes, extending beyond the 13B range, would provide a more comprehensive understanding of its performance scalability.</li>
+    </ul>
+
+    <p><strong>Overall Rating:</strong> 6 (Weak Accept)</p>
+
+    <p>The field is rapidly evolving, and competitors will take any advantage when available. 
+      If RetNet was truly revolutionary, we'd already be seeing LLMs based on it. It's been around 5 months, 
+      and it hasn't gotten a lot of traction as of yet.</p>
+
+
+<!-- <div>
+    <h3>Review by Karan Mudaliar</h3>
+    <p><strong>Score:</strong> NA</p>
+    <p><strong>Strengths:</strong></p>
+    <ul>
+        <li>bullet points</li>
+    </ul>
+    <p><strong>Weaknesses:</strong></p>
+    <ul>
+        <li>Extremely long paper</li>
+        <li>bullet points</li>
+    </ul>
+</div>
+
+<div>
+    <h3>Review by Sashank</h3>
+    <p><strong>Score:</strong> NA</p>
+    <p><strong>Strengths:</strong></p>
+    <ul>
+        <li>bullet points</li>
+    </ul>
+    <p><strong>Weaknesses:</strong></p>
+    <ul>
+        <li>bullet points</li>
+    </ul>
+</div> -->
+
+
+<!-- <p>Optionally, in addition to a reading-based analysis, implement the ideas of the paper in code, and report on your findings.
+</p> -->
 
 <h3>References</h3>
 
-<p><a name="bottou-1990">[1]</a> <a href="https://papers.baulab.info/Bottou-1990.pdf"
-  >L&eacute;on Bottou and Patrick Gallinari.
-  <em>A framework for the cooperation of learning algorithms.</em></a>
-  Advances in neural information processing systems 3 (1990).
+<p><a name="FlashAttention">[1]</a> <a href="https://arxiv.org/pdf/2205.14135.pdf"
+  >Tri Dao, Daniel Y. Fu, Stefano Ermon, Atri Rudra, and Christopher Ré.
+  <em>Flash Attention: </em></a>
+  Fast and Memory-Efficient Exact Attention with IO-Awareness
+</p>
+<p><a name="Attention is all you need">[2]</a> <a href="https://arxiv.org/pdf/1706.03762.pdf"
+  >Vaswani et al.
+  <em>Attention Is All You Need</em></a>
+</p>
+<p><a name="Transformers are RNNs">[3]</a> <a href="https://arxiv.org/pdf/2006.16236.pdf"
+  >Angelos Katharopoulos & Apoorv Vyas et al.
+  <em>Transformers are RNNs:</em></a>
+  Fast Autoregressive Transformers with Linear Attention.
+</p>
+<p><a name="Retentive Network">[4]</a> <a href="https://arxiv.org/pdf/2307.08621.pdf"
+  >Yutao Sun & Li Dong et al.
+  <em>Retentive Network:</em></a>
+  A Successor to Transformer for Large Language Models
 </p>
 
-<h2>Team Members</h2>
+<!-- <h2>Team Members</h2>
                                                    
-<p>Make sure to list here is who is on the team.</p>
+<p>Make sure to list here is who is on the team.</p> -->
+
+<h2>Team Members</h2>
+
+<div class="team-member">
+  <img src="images/Karan.jpeg" alt="Karan" width="80" height="80">
+  <p>Karan Mudaliar</p>
+</div>
+
+<div class="team-member">
+  <img src="images/Sashank.jpeg" alt="Sashank" width="80" height="80">
+  <p>Sashank Reddy</p>
+</div>
+
+
 
   
 </div><!--col-->
